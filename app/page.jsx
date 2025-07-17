@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Outfit } from "next/font/google";
+import Head from 'next/head';
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,13 +17,13 @@ const outfit = Outfit({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <head>
+      <Head>
         <title>FurnitureStored - Find the Best Furniture Stores in the US</title>
         <meta name="description" content="Discover top-rated furniture stores, design inspiration, and expert buying guides. Find the perfect furniture store in your city." />
         <HeadCommon />
         <MetaOG ogData={ogData}/>
         <link rel="canonical" href="https://www.furniturestored.com" />
-      </head>
+      </Head>
       <body className={`${outfit.className} antialiased text-[rgba(0,0,0,0.95)]`}>
         <Navbar />
 

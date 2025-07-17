@@ -1,5 +1,6 @@
 "use client";
 
+import Head from 'next/head';
 import Link from "next/link";
 import { Outfit } from "next/font/google";
 
@@ -15,13 +16,13 @@ const outfit = Outfit({ subsets: ["latin"] });
 export default function ContactPage() {
   return (
     <>
-      <head>
+      <Head>
         <title>Contact FurnitureStored</title>
         <meta name="description" content="Contact FurnitureStored to get in touch with us." />
         <MetaOG ogData={ogData}/>
         <HeadCommon />
         <link rel="canonical" href="https://www.furniturestored.com/contact" />
-      </head>
+      </Head>
       <body className={`${outfit.className} antialiased text-[rgba(0,0,0,0.95)]`}>
         <Navbar />
 
