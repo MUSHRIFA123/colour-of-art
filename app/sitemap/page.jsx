@@ -1,10 +1,14 @@
+import Head from 'next/head';
+
+
 export default function Sitemap() {
+  
   return (
     <>
-      <head>
+      <Head>
         <title>Sitemap | FurnitureStored</title>
         <meta name="description" content="Complete sitemap of FurnitureStored - Find all pages and links" />
-      </head>
+      </Head>
       <body className="bg-gray-50">
         <main className="max-w-4xl mx-auto px-4 py-12">
           <h1 className="text-3xl font-bold mb-8">Sitemap</h1>

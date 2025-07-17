@@ -2,16 +2,17 @@ import Navbar from "@/components/Navbar";
 import { Outfit } from "next/font/google";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Head from 'next/head';
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export default function NotFound() {
   return (
     <>
-      <head>
+      <Head>
         <title>404 - Page Not Found | FurnitureStored</title>
         <meta name="description" content="404 - Page Not Found" />
-      </head>
+      </Head>
       <body className={`${outfit.className} antialiased text-[rgba(0,0,0,0.95)]`}>
         <Navbar />
 
