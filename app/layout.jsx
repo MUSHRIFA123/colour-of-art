@@ -1,20 +1,16 @@
-// app/layout.tsx
-
+// app/layout.jsx
 import "./globals.css";
-import { ReactNode } from "react";
 
 export const metadata = {
   title: "Your Site Title",
-  description: "Your site description",
+  description:
+    "Discover unique handmade paintings and digital artwork. Support independent artists. Free shipping available.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-site-verification" content="KbHGYyqwSZqkddVP5SKR1TO5DgHhvHM1dCk0A2q0WBc" />
-      </head>
-      <body>{children}</body>
+        {children}
     </html>
   );
 }
