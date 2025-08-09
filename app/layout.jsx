@@ -1,7 +1,10 @@
 // app/layout.js
 export const metadata = {
-  title: 'Your Site Title',
+  title: 'Colour of Art',
   description: 'Your site description',
+  other: {
+    'google-adsense-account': 'ca-pub-7496144172676724',
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -14,7 +17,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         ></script>
       </head>
-        {children}
+      <body>{children}</body>
     </html>
   )
 }
